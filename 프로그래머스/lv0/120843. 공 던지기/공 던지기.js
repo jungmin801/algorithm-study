@@ -1,12 +1,9 @@
 function solution(numbers, k) {
-    let arr = [];
-    if(numbers.length%2 === 0){
-        arr = numbers.filter((_,i) => i % 2 === 0);
-       
-    } else {
-       let first = numbers.filter((_,i) => i % 2 === 0);
-       let second = numbers.filter((_,i) => i % 2 !== 0);
-       arr = [...first, ...second] 
+    let arr = numbers.filter((_,i) => i % 2 === 0);
+    
+    if(numbers.length % 2 !== 0 ){
+        let second = numbers.filter((_,i) => i % 2 !== 0);
+       arr = [...arr, ...second] 
     }
 
     if(arr.length >= k) return arr[k-1];
