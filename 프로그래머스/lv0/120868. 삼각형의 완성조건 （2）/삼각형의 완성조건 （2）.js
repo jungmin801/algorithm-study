@@ -10,7 +10,7 @@ function solution(sides) {
     let max = Math.max(...sides)
     let arr = [];
     // max가 가장 긴변일때
-    for(let i=0; i<=max; i++){
+    for(let i=1; i<=max; i++){
         if(max < rest + i) arr.push(i);
     }
     // 가장 긴변이 따로 있을때
