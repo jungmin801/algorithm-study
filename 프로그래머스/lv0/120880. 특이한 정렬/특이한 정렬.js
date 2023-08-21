@@ -8,5 +8,5 @@ function solution(numlist, n) {
                }
                obj[diff].push(a);
            });
-    return Object.values(obj).flat();
+    return Object.values(obj);
 }
