@@ -1,7 +1,7 @@
 function solution(phone_number) {
-    for(let i=0; i<phone_number.length-4; i++){
-        phone_number = phone_number.replace(phone_number[i], '*');
+    let answer = ""
+    while (answer.length < phone_number.length-4){
+        answer += "*"
     }
-   
-    return phone_number;
+    return answer + phone_number.slice(-4);
 }
