@@ -8,4 +8,7 @@ function solution(left, right) {
         arr.length % 2 === 0 ? answer += i : answer -= i;
     }
     return answer;   
+    
+    
+
 }
