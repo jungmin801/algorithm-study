@@ -1,17 +1,12 @@
+
 function solution(d, budget) {
     let cnt = 0;
     let sum = 0;
     d.sort((a,b) => a-b);
-    while(sum <= budget){
+    for(cnt; cnt<d.length; cnt++){
         sum += d[cnt];
-        cnt++;
+        if(sum > budget) break;
     }
     
-    // for(let i=0; i<d.length; i++){
-    //     sum += d[i];
-    //     if(sum > budget) break;
-    //     else cnt++;
-    // }
-    
-    return cnt-1;
+    return cnt;
 }
