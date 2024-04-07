@@ -8,6 +8,8 @@ function solution(participant, completion) {
         } else obj[name] = 1;
     }
     
+
+    
     //2. 완주자 이름이 obj에 있는 경우에 인원 수를 -1 한다.
     for(let name of completion){
         if(obj[name] > 0){
